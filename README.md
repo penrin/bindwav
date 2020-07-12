@@ -71,4 +71,4 @@ Then, the upper limit of `length` is determined by `floor(2^32 / ws / ch)`.
 
 `length` upper limit example:
 
-<img width="420" alt="length_lim" src="https://user-images.githubusercontent.com/8520833/87246854-d5387780-c48a-11ea-9dee-a109d358763d.png">
+<img width="420" alt="length_lim" src="https://user-images.githubusercontent.com/8520833/87246956-bc7c9180-c48b-11ea-9a7a-5a3829b66963.png">
