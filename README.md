@@ -19,7 +19,7 @@ Usage
 $ python bindwav ABC 24
 ```
 binds multiple wav files `ABC_01.wav, ABC_02.wav, ..., ABC_24.wav` into one file `ABC_bind24ch.wav`.
-Multiple file needs to be monaural and named by serial numbers starting from 1.
+Multiple file needs to be monaural of the same length and named by serial numbers starting from 1.
 
 '0' digits filled to the left is adjusted by option `--digit`, so `--digit 1` don't fill zeros. If 0 or less is put in this option, the digit is automatically determined.
 
@@ -52,8 +52,8 @@ If `ws` and `fs` are given, the upper limit of `ch` is determined by `min(2^16 -
 Then, the upper limit of `length` is determined by `floor(2^32 / ws / ch)`.
 
 
-
-`ch` upper limit example:
+<br>
+### `ch` upper limit
 
 | fs (Hz) | 8 bit | 16 bit | 24 bit | 32 bit |
 | ---: | ---: | ---: | ---: | ---: | 
@@ -69,6 +69,7 @@ Then, the upper limit of `length` is determined by `floor(2^32 / ws / ch)`.
 | 192000 | 22369 | 11184 | 7456 | 5592 |
 
 
-`length` upper limit example:
+<br>
+### `length` upper limit (ws:3, fs:48000)
 
 <img width="420" alt="length_lim" src="https://user-images.githubusercontent.com/8520833/87246956-bc7c9180-c48b-11ea-9a7a-5a3829b66963.png">
